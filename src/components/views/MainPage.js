@@ -53,7 +53,9 @@ function MainPage() {
         <img src={imgH2} class="imgH2" alt=""/>
       </div>
       <div class="wrapButton">
-        <img src={btnStart} class="btnStart" alt=""/>
+        <Link to="/quiz">
+          <img src={btnStart} class="btnStart" alt="" />
+        </Link>
       </div>
       <div class="wrapOtherImgs">
         <img src={imgCloudMain} class="imgCloudMain" alt="" />

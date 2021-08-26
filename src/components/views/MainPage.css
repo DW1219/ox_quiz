@@ -33,6 +33,7 @@
 }
 
 .wrapImgTitle {
+  width: 100%;
   margin-top: 2em;
   margin-left: 0;
   margin-right: 0;
@@ -218,7 +219,7 @@
 }
 
 .btnStart {
-  width: 50%;
+  width: 100%;
   animation: btnScale 1.5s infinite;
 }
 
