@@ -1,8 +1,8 @@
 import React, {useEffect, useRef} from 'react'
 import './MainPage.css'
-import imgTitle from '../../resources/picture/oxQuizTitle.png';
-import imgH1 from '../../resources/picture/h1.png';
-import imgH2 from '../../resources/picture/h2.png';
+import imgTitle from '../../resources/picture/oxQuizTitle3.png';
+import imgH1 from '../../resources/picture/h1_fix.png';
+import imgH2 from '../../resources/picture/h2_fix.png';
 import btnStart from '../../resources/picture/btnStart3.png';
 import imgCloudMain from '../../resources/picture/cloudMain.png'
 import imgHill from '../../resources/picture/hill3.png'

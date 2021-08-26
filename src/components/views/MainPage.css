@@ -1,3 +1,7 @@
+.oxMain{
+
+}
+
 .LottieGift {
   position: absolute;
   width: 20%;
@@ -185,7 +189,7 @@
   animation: moveUpToDown_1080 ease 1.5s;
 }
 .imgTitle {
-  width: 70%;
+  width: 80%;
 }
 
 .wrapImgH1 {
