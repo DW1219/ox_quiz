@@ -28,11 +28,41 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.bgmOnOff {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 0.6em;
+  margin-right: 0.6em;
+}
+
+.bgmStart{
+  max-width: 1.6rem;
+  max-height: 1.6rem;
+  margin-right: 0.3rem;
+}
+.bgmPause {
+  max-width: 1.6rem;
+  max-height: 1.6rem;
+}
+
+
+@media (min-width: 1000px) and (max-width: 4000px) {
+.bgmOnOff {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1.6em;
+  margin-right: 1.6em;
+}
+
+.bgmStart {
+  max-width: 10rem;
+  max-height: 10rem;
+  margin-right: 0.8rem;
+}
+
+.bgmPause {
+  max-width: 10rem;
+  max-height: 10rem;
+}
 }

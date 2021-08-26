@@ -1,0 +1,283 @@
+.LottieGift {
+  position: absolute;
+  width: 20%;
+  bottom: 28%;
+  left: 2%;
+  z-index: 0;
+  animation: moveDownToUpLottieGift ease 1.5s;
+}
+.LottiePlay1 {
+  position: absolute;
+  width: 30%;
+  bottom: 2%;
+  left: 10%;
+  z-index: -1;
+  animation: moveDownToUpLottiePlay1 ease 1.5s;
+}
+.LottiePlay2 {
+  position: absolute;
+  width: 20%;
+  bottom: 8%;
+  right: 20%;
+  z-index: -1;
+  animation: moveDownToUpLottiePlay2 ease 1.5s;
+}
+
+.imgCloudMain {
+  position: absolute;
+  bottom: 38%;
+  width: 20%;
+  left: 0;
+  z-index: -1;
+  animation: moveCloud 100s linear infinite;
+}
+
+.wrapImgTitle {
+  margin-top: 2em;
+  margin-left: 0;
+  margin-right: 0;
+  display: flex;
+  justify-content: center;
+  animation: moveUpToDown ease 1.5s;
+}
+.imgTitle {
+  width: 70%;
+}
+
+.wrapImgH1 {
+  margin-top: 3em;
+  margin-left: 0;
+  margin-right: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.imgH1{
+  width: 80%;
+}
+
+.wrapImgH2 {
+  margin-top: 3em;
+  margin-left: 0;
+  margin-right: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.imgH2 {
+  width: 60%;
+}
+
+.wrapButton {
+  margin-top: 5em;
+  margin-bottom: 10em;
+  display: flex;
+  justify-content: center;
+}
+
+.btnStart {
+  width: 50%;
+  animation: btnScale 1.5s infinite;
+}
+
+.imgHill{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+  animation: moveDownToUpImg ease 1.5s;
+}
+
+
+
+@keyframes btnScale{
+0%{
+  transform: scale(1);
+}
+50%{
+  transform: scale(1.1);
+}
+0% {
+  transform: scale(1);
+}
+}
+
+@keyframes moveCloud{
+0% {
+  left: 0
+}
+
+50% {
+  left: 80%
+}
+
+0% {
+  left: 0
+}
+}
+
+@keyframes moveUpToDown {
+  0% {
+    margin-top: -2em;
+  } 
+
+  100% {
+    margin-top: 2em;
+  }
+}
+@keyframes moveDownToUpImg {
+  0% {
+    bottom:-10%;
+  }
+
+  100% {
+    bottom:0;
+  }
+}
+@keyframes moveDownToUpLottiePlay1 {
+  0% {
+    bottom: -10%;
+  }
+
+  100% {
+    bottom: 2%;
+  }
+}
+@keyframes moveDownToUpLottiePlay2 {
+  0% {
+    bottom: -10%;
+  }
+
+  100% {
+  bottom: 8%;
+  }
+}
+@keyframes moveDownToUpLottieGift {
+  0% {
+    bottom: -10%;
+  }
+
+  100% {
+    bottom: 28%;
+  }
+}
+
+/*********************For 1080x1920 resoltuion*****************************/
+
+@media (min-width: 1000px) and (max-width: 4000px) {
+.imgCloudMain {
+  position: absolute;
+  bottom: 39%;
+  width: 20%;
+  left: 0;
+  z-index: -1;
+  animation: moveCloud 100s linear infinite;
+}
+
+.wrapImgTitle {
+  margin-top: 5em;
+  margin-left: 0;
+  margin-right: 0;
+  display: flex;
+  justify-content: center;
+  animation: moveUpToDown_1080 ease 1.5s;
+}
+.imgTitle {
+  width: 70%;
+}
+
+.wrapImgH1 {
+  margin-top: 6em;
+  margin-left: 0;
+  margin-right: 0;
+  display: flex;
+  justify-content: center;
+}
+.imgH1 {
+  width: 80%;
+}
+
+.wrapImgH2 {
+  margin-top: 6em;
+  margin-left: 0;
+  margin-right: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.imgH2 {
+  width: 60%;
+}
+
+.wrapButton {
+  margin-top: 15em;
+  margin-bottom: 10em;
+  display: flex;
+  justify-content: center;
+}
+
+.btnStart {
+  width: 50%;
+  animation: btnScale 1.5s infinite;
+}
+
+.imgHill {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+  animation: moveDownToUpImg_1080 ease 1.5s;
+}
+}
+
+@keyframes moveUpToDown_1080 {
+  0% {
+    margin-top: -2em;
+  }
+
+  100% {
+    margin-top: 5em;
+  }
+}
+
+@keyframes moveDownToUpImg_1080 {
+  0% {
+    bottom: -10%;
+  }
+
+  100% {
+    bottom: 0;
+  }
+}
+
+@keyframes moveDownToUpLottiePlay1_1080 {
+  0% {
+    bottom: -10%;
+  }
+
+  100% {
+    bottom: 2%;
+  }
+}
+
+@keyframes moveDownToUpLottiePlay2_1080 {
+  0% {
+    bottom: -10%;
+  }
+
+  100% {
+    bottom: 8%;
+  }
+}
+
+@keyframes moveDownToUpLottieGift_1080 {
+  0% {
+    bottom: -10%;
+  }
+
+  100% {
+    bottom: 28%;
+  }
+}
