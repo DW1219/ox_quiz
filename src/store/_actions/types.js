@@ -1,0 +1,1 @@
+export const Store_Result = 'store_result';

@@ -1,5 +1,37 @@
-.oxMain{
+.oxMain {
+  opacity: 0;
+}
 
+.oxMain.is_loaded {
+  opacity: 1;
+}
+
+.oxMain.is_loaded .LottieGift {
+  animation: moveDownToUpLottieGift ease 1.5s;
+}
+
+.oxMain.is_loaded .LottiePlay1 {
+  animation: moveDownToUpLottiePlay1 ease 1.5s;
+}
+
+.oxMain.is_loaded .LottiePlay2 {
+  animation: moveDownToUpLottiePlay2 ease 1.5s;
+}
+
+.oxMain.is_loaded .imgCloudMain {
+  animation: moveCloud 100s linear infinite;
+}
+
+.oxMain.is_loaded .wrap__ImgTitle {
+  animation: moveUpToDown ease 1.5s;
+}
+
+.oxMain.is_loaded .btnStart {
+  animation: btnScale 1.5s infinite;
+}
+
+.oxMain.is_loaded .imgHill {
+  animation: moveDownToUpImg ease 1.5s;
 }
 
 .LottieGift {
@@ -8,7 +40,6 @@
   bottom: 28%;
   left: 2%;
   z-index: 0;
-  animation: moveDownToUpLottieGift ease 1.5s;
 }
 .LottiePlay1 {
   position: absolute;
@@ -16,7 +47,6 @@
   bottom: 2%;
   left: 10%;
   z-index: -1;
-  animation: moveDownToUpLottiePlay1 ease 1.5s;
 }
 .LottiePlay2 {
   position: absolute;
@@ -24,7 +54,6 @@
   bottom: 8%;
   right: 20%;
   z-index: -1;
-  animation: moveDownToUpLottiePlay2 ease 1.5s;
 }
 
 .imgCloudMain {
@@ -33,23 +62,22 @@
   width: 20%;
   left: 0;
   z-index: -1;
-  animation: moveCloud 100s linear infinite;
 }
 
-.wrapImgTitle {
+.wrap__ImgTitle {
   width: 100%;
   margin-top: 2em;
   margin-left: 0;
   margin-right: 0;
   display: flex;
   justify-content: center;
-  animation: moveUpToDown ease 1.5s;
 }
+
 .imgTitle {
   width: 70%;
 }
 
-.wrapImgH1 {
+.wrap__ImgH1 {
   margin-top: 3em;
   margin-left: 0;
   margin-right: 0;
@@ -61,7 +89,7 @@
   width: 80%;
 }
 
-.wrapImgH2 {
+.wrap__ImgH2 {
   margin-top: 3em;
   margin-left: 0;
   margin-right: 0;
@@ -73,7 +101,7 @@
   width: 60%;
 }
 
-.wrapButton {
+.wrap__Button {
   margin-top: 5em;
   margin-bottom: 10em;
   display: flex;
@@ -82,7 +110,6 @@
 
 .btnStart {
   width: 50%;
-  animation: btnScale 1.5s infinite;
 }
 
 .imgHill{
@@ -91,7 +118,6 @@
   left: 0;
   width: 100%;
   z-index: -1;
-  animation: moveDownToUpImg ease 1.5s;
 }
 
 
@@ -168,32 +194,46 @@
   }
 }
 
-/*********************For 1080x1920 resoltuion*****************************/
+/*********************For 720 resoltuion*****************************/
 
-@media (min-width: 1000px) and (max-width: 4000px) {
+@media (min-width: 700px) and (max-width: 2000px) {
+  .oxMain.is_loaded .imgCloudMain {
+    animation: moveCloud 100s linear infinite;
+  }
+
+  .oxMain.is_loaded .wrap__ImgTitle {
+    animation: moveUpToDown_720 ease 1.5s;
+  }
+
+  .oxMain.is_loaded .btnStart {
+    animation: btnScale 1.5s infinite;
+  }
+
+  .oxMain.is_loaded .imgHill {
+    animation: moveDownToUpImg_720 ease 1.5s;
+  }
+
 .imgCloudMain {
   position: absolute;
   bottom: 39%;
   width: 20%;
   left: 0;
   z-index: -1;
-  animation: moveCloud 100s linear infinite;
 }
 
-.wrapImgTitle {
-  margin-top: 5em;
+.wrap__ImgTitle {
+  margin-top: 2em;
   margin-left: 0;
   margin-right: 0;
   display: flex;
   justify-content: center;
-  animation: moveUpToDown_1080 ease 1.5s;
 }
 .imgTitle {
   width: 80%;
 }
 
-.wrapImgH1 {
-  margin-top: 6em;
+.wrap__ImgH1 {
+  margin-top: 4em;
   margin-left: 0;
   margin-right: 0;
   display: flex;
@@ -203,7 +243,7 @@
   width: 80%;
 }
 
-.wrapImgH2 {
+.wrap__ImgH2 {
   margin-top: 6em;
   margin-left: 0;
   margin-right: 0;
@@ -215,16 +255,15 @@
   width: 60%;
 }
 
-.wrapButton {
-  margin-top: 15em;
+.wrap__Button {
+  margin-top: 5em;
   margin-bottom: 10em;
   display: flex;
   justify-content: center;
 }
 
 .btnStart {
-  width: 100%;
-  animation: btnScale 1.5s infinite;
+  width: 80%;
 }
 
 .imgHill {
@@ -233,11 +272,10 @@
   left: 0;
   width: 100%;
   z-index: -1;
-  animation: moveDownToUpImg_1080 ease 1.5s;
 }
 }
 
-@keyframes moveUpToDown_1080 {
+@keyframes moveUpToDown_720 {
   0% {
     margin-top: -2em;
   }
@@ -247,7 +285,7 @@
   }
 }
 
-@keyframes moveDownToUpImg_1080 {
+@keyframes moveDownToUpImg_720 {
   0% {
     bottom: -10%;
   }
@@ -257,7 +295,7 @@
   }
 }
 
-@keyframes moveDownToUpLottiePlay1_1080 {
+@keyframes moveDownToUpLottiePlay1_720 {
   0% {
     bottom: -10%;
   }
@@ -267,7 +305,7 @@
   }
 }
 
-@keyframes moveDownToUpLottiePlay2_1080 {
+@keyframes moveDownToUpLottiePlay2_720 {
   0% {
     bottom: -10%;
   }
@@ -277,7 +315,7 @@
   }
 }
 
-@keyframes moveDownToUpLottieGift_1080 {
+@keyframes moveDownToUpLottieGift_720 {
   0% {
     bottom: -10%;
   }

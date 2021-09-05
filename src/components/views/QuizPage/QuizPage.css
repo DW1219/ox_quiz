@@ -1,0 +1,371 @@
+
+.wrap__QuestionNumber{
+  margin-top: 2em;
+  animation: moveUpToDown_quizBox 1s;
+}
+.questionNumberText{
+  background-color: rgba(16, 128, 233, 0.8);
+  font-size: 2rem;
+  font-weight: 900;
+  color: white;
+  font-family:sans-serif;
+}
+
+.oxQuestionBox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 12rem;
+  background-color: rgba(164, 11, 194, 0.8);
+
+  z-index: 10;
+}
+.oxQuestionText{
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 900;
+  font-family:sans-serif;
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+}
+
+.wrap__OXButton{
+  width: 100%;
+  position: absolute;
+  bottom: 5em;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: space-around;
+  animation: moveDownToUp_ox 1s;
+}
+.imgO{
+  width: 45%;
+}
+.imgX
+{
+  width: 45%;
+}
+
+.lottieAmusement1{
+  position: absolute;
+  width: 50%;
+  bottom: 25%;
+  left: 0;
+  z-index: -1;  
+}
+.lottieAmusement2{
+  position: absolute;
+  width: 35%;
+  bottom: 30%;
+  right: 5%;
+  z-index: -1;  
+}
+
+.imgHill10{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: -5;
+}
+
+.wrap__DescriptionPopup{
+  position: absolute;
+  top:0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 20;
+
+  animation: scaleSmallToBig_popup 0.8s ease;
+}
+
+.wrap__EmoImages{
+  margin-top: 3em;
+  display: flex;
+  justify-content: center;
+}
+.emo_image{
+  width: 25%;
+}
+
+.wrap__SentenceImages{
+  margin-top: 0.2em;
+  display: flex;
+  justify-content: center;
+}
+.sentenceImage{
+  width: 45%;
+}
+
+.describeAnswer{
+  margin-top: 1em;
+  border-radius: 3rem;
+  background-color: #db12af;
+  font-family:sans-serif;
+  width: 100%;
+  color: white;
+}
+.correctAnswer{
+  display: flex;
+  justify-content: center;
+  font-weight: 900;
+  font-size: 2rem;
+  padding-top: 0.4rem;
+}
+.correctDescription{
+  padding-top: 0.4rem;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 1rem;
+  font-size: 1.0rem;
+}
+
+.wrap__popUpButton{
+  margin-top: 2em;
+  display: flex;
+  justify-content: center;
+}
+.btnSeeResult{
+  width: 40%;
+  animation: btnScale 1.5s infinite;
+}
+.btnNextQuestion{
+  width: 40%;
+  animation: btnScale 1.5s infinite;
+}
+
+
+@keyframes moveUpToDown_quizBox {
+  0% {
+    margin-top: -5em;
+  } 
+  60% {
+    margin-top: 3em;
+  }
+  100% {
+    margin-top: 2em;
+  }
+}
+
+@keyframes moveDownToUp_ox {
+  0% {
+    bottom: -5em;
+    transform: scale(0.2);
+  } 
+  60% {
+    bottom: 5em;
+    transform: scale(0.8);
+  }
+  100% {
+    bottom: 5em;
+    transform: scale(1);
+  }
+}
+
+@keyframes scaleSmallToBig_popup {
+  0% {
+    transform: scale(0.1);
+  } 
+  60%{
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes btnScale{
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.1);
+  }
+  0% {
+    transform: scale(1);
+  }
+}
+
+/*******************************************For 720 resoltuion***********************************************/
+
+@media (min-width: 700px) and (max-width: 2000px) {
+  .wrap__QuestionNumber{
+    margin-top: 2em;
+    animation: moveUpToDown_quizBox_720 1s;
+  }
+  .questionNumberText{
+    background-color: rgba(16, 128, 233, 0.8);
+    font-size: 3rem;
+    font-weight: 900;
+    color: white;
+    font-family:sans-serif;
+  }
+  
+  .oxQuestionBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 15rem;
+    background-color: rgba(164, 11, 194, 0.8);
+  
+    z-index: 10;
+  }
+  .oxQuestionText{
+    color: white;
+    font-size: 3rem;
+    font-weight: 900;
+    font-family:sans-serif;
+    padding-left: 0.4em;
+    padding-right: 0.4em;
+  }
+  
+  .wrap__OXButton{
+    width: 100%;
+    position: absolute;
+    bottom: 6em;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: space-around;
+    animation: moveDownToUp_ox_720 1s;
+  }
+  .imgO{
+    width: 40%;
+  }
+  .imgX
+  {
+    width: 40%;
+  }
+  
+  .lottieAmusement1{
+    position: absolute;
+    width: 60%;
+    bottom: 25%;
+    left: 0;
+    z-index: -1;  
+  }
+  .lottieAmusement2{
+    position: absolute;
+    width: 35%;
+    bottom: 30%;
+    right: 5%;
+    z-index: -1;  
+  }
+  
+  .imgHill10{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: -5;
+  }
+  
+  .wrap__DescriptionPopup{
+    position: absolute;
+    top:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 20;
+  
+    animation: scaleSmallToBig_popup_720 0.8s ease;
+  }
+  
+  .wrap__EmoImages{
+    margin-top: 4em;
+    display: flex;
+    justify-content: center;
+  }
+  .emo_image{
+    width: 25%;
+  }
+  
+  .wrap__SentenceImages{
+    margin-top: 0.2em;
+    display: flex;
+    justify-content: center;
+  }
+  .sentenceImage{
+    width: 45%;
+  }
+  
+  .describeAnswer{
+    margin-top: 1em;
+    border-radius: 3rem;
+    background-color: #db12af;
+    font-family:sans-serif;
+    width: 100%;
+    color: white;
+  }
+  .correctAnswer{
+    display: flex;
+    justify-content: center;
+    font-weight: 900;
+    font-size: 3rem;
+    padding-top: 0.4rem;
+  }
+  .correctDescription{
+    padding-top: 0.4rem;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 1.4rem;
+    font-size: 2.0rem;
+  }
+  
+  .wrap__popUpButton{
+    margin-top: 3em;
+    display: flex;
+    justify-content: center;
+  }
+  .btnSeeResult{
+    width: 80%;
+    animation: btnScale 1.5s infinite;
+  }
+  .btnNextQuestion{
+    width: 40%;
+    animation: btnScale 1.5s infinite;
+  }
+
+  @keyframes moveUpToDown_quizBox_720 {
+    0% {
+      margin-top: -5em;
+    } 
+    60% {
+      margin-top: 3em;
+    }
+    100% {
+      margin-top: 2em;
+    }
+  }
+  
+  @keyframes moveDownToUp_ox_720 {
+    0% {
+      bottom: -5em;
+      transform: scale(0.2);
+    } 
+    60% {
+      bottom: 6em;
+      transform: scale(0.8);
+    }
+    100% {
+      bottom: 6em;
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes scaleSmallToBig_popup_720 {
+    0% {
+      transform: scale(0.1);
+    } 
+    60%{
+      transform: scale(0.8);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+}

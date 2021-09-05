@@ -46,8 +46,9 @@
   max-height: 1.6rem;
 }
 
+/*******************************************For 720 resoltuion***********************************************/
 
-@media (min-width: 1000px) and (max-width: 4000px) {
+@media (min-width: 700px) and (max-width: 2000px) {
 .bgmOnOff {
   display: flex;
   justify-content: flex-end;
@@ -56,13 +57,13 @@
 }
 
 .bgmStart {
-  max-width: 10rem;
-  max-height: 10rem;
+  max-width: 6rem;
+  max-height: 6rem;
   margin-right: 0.8rem;
 }
 
 .bgmPause {
-  max-width: 10rem;
-  max-height: 10rem;
+  max-width: 6rem;
+  max-height: 6rem;
 }
 }

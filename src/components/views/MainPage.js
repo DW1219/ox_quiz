@@ -16,6 +16,27 @@ function MainPage() {
   const container2 = useRef(null)
   const container3 = useRef(null)
 
+
+  const imgLoad = () => {
+    const imgArr = Array.prototype.slice.call(document.querySelectorAll('.lazy-load'));
+    console.log(imgArr)
+    //Promise.all(imgArr.map((item, index) => {
+    Promise.allSettled(imgArr.map((item, index) => {
+      console.log(item)
+        return new Promise(resolve => {
+            item.addEventListener('load', () => {
+                resolve();
+            })
+            item.src = item.getAttribute('lazy-src');
+        })
+    }))
+        .then(_ => {
+            document.querySelector('.oxMain').classList.add('is_loaded');
+        })
+        .catch(err => console.log(err));
+}
+
+
     useEffect(() => {
     lottie.loadAnimation({
       container: container1.current,
@@ -38,31 +59,32 @@ function MainPage() {
       autoplay: true,
       animationData: require('../../resources/svg/lottie_play2.json'),
     })
+    imgLoad();
   }, [])
 
   return (
-    <div class="oxMain">
-      <div class="LottieGift" ref={container1} />
-      <div class="wrapImgTitle">
-        <img src={imgTitle} class="imgTitle" alt=""/>
+    <div className="oxMain">
+      <div className="LottieGift" ref={container1} />
+      <div className="wrap__ImgTitle">
+        <img lazy-src={imgTitle} className="lazy-load imgTitle" alt=""/>
       </div>
-      <div class="wrapImgH1">
-        <img src={imgH1} class="imgH1" alt=""/>
+      <div className="wrap__ImgH1">
+        <img lazy-src={imgH1} className="lazy-load imgH1" alt=""/>
       </div>
-      <div class="wrapImgH2">
-        <img src={imgH2} class="imgH2" alt=""/>
+      <div className="wrap__ImgH2">
+        <img lazy-src={imgH2} className="lazy-load imgH2" alt=""/>
       </div>
-      <div class="wrapButton">
+      <div className="wrap__Button">
         <Link to="/quiz">
-          <img src={btnStart} class="btnStart" alt="" />
+          <img lazy-src={btnStart} className="lazy-load btnStart" alt="" />
         </Link>
       </div>
-      <div class="wrapOtherImgs">
-        <img src={imgCloudMain} class="imgCloudMain" alt="" />
-        <img src={imgHill} class="imgHill" alt="" />
+      <div className="wrap__OtherImgs">
+        <img lazy-src={imgCloudMain} className="lazy-load imgCloudMain" alt="" />
+        <img lazy-src={imgHill} className="lazy-load imgHill" alt="" />
       </div>
-      <div class="LottiePlay1" ref={container2} />
-      <div class="LottiePlay2" ref={container3} />
+      <div className="LottiePlay1" ref={container2} />
+      <div className="LottiePlay2" ref={container3} />
     </div>
         
   )
